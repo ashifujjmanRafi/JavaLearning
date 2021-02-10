@@ -11,8 +11,10 @@ public class Main{
 		System.out.println(fullname);
 		*/
 		//by Static method can be called by class name.
-		Me.sayName();
-		Me.sayAge();
+		//Me.sayName();
+		//Me.sayAge();
+		//IfElseEx.luckyNumber();
+		WhileLoop.Test();
 	}
 }
 
