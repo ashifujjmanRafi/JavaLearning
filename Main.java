@@ -14,7 +14,8 @@ public class Main{
 		//Me.sayName();
 		//Me.sayAge();
 		//IfElseEx.luckyNumber();
-		WhileLoop.Test();
+		//WhileLoop.Test();
+		PrintingOddEven.strictDivisors();
 	}
 }
 
