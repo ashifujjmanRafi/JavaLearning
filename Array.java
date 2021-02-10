@@ -11,6 +11,9 @@ public class Array {
         {
             int x = src.nextInt();
             int[] arr = new int[x];
+            
+            // String[] array = new String[100];
+
 
             for (int i = 0; i < x ; i++) {
                 arr[i] = src.nextInt();
