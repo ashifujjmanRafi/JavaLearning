@@ -32,4 +32,21 @@ public class WhileLoop {
 
     }
 
+    public static void sumOfDigit() {
+        try(Scanner s= new Scanner(System.in)){
+            System.out.print("Enter a value :");
+            int var1 = s.nextInt();
+            int sum=0;
+            while(var1!=0){
+                System.out.print(var1%10 +" ");
+                sum+=var1%10;
+                var1=var1/10;
+
+            }
+            System.out.println("sum="+sum);
+
+        }
+        
+    }
+
 }

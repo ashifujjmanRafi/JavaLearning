@@ -14,8 +14,8 @@ public class Main{
 		//Me.sayName();
 		//Me.sayAge();
 		//IfElseEx.luckyNumber();
-		//WhileLoop.Test();
-		PrintingOddEven.strictDivisors();
+		WhileLoop.sumOfDigit();
+		//PrintingOddEven.strictDivisors();
 	}
 }
 
