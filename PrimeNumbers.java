@@ -23,7 +23,8 @@ public class PrimeNumbers {
 
                 }
             }
-
+            // showing the prime numbers upto var1, like if var1 is 10 , the result will
+            // show prime numbers 1 to 10
         }
     }
 
