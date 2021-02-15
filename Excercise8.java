@@ -7,7 +7,7 @@ public class Excercise8 {
 
             String var1;
             var1 = s.nextLine();
-            
+
             for (int i = 0; i < var1.length(); i++) {
                 System.out.print(var1.charAt(i) + " ");
             }
@@ -33,7 +33,7 @@ public class Excercise8 {
 
     public static void main(String[] args) {
         spaceString();
-        //reverseStrings();
+        // reverseStrings();
     }
 
 }
