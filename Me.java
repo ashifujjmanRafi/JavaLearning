@@ -1,11 +1,24 @@
-public class Me{
+import java.util.Scanner;
 
-	public static void sayName(){
-		System.out.println("My name is Rafi");
+public class Me {
+
+	public static void sayName() {
+		try (Scanner s = new Scanner(System.in)) {
+			String str = s.nextLine();
+			System.out.println(str);
+		}
 
 	}
-	public static void sayAge(){
-		System.out.println("My age is 22");
 
+	public static void sayAge() {
+		Scanner s = new Scanner(System.in);
+			int str = s.nextInt();
+			System.out.println(str);
+		
+	}
+	public static void main(String[] args) {
+		sayAge();
+		sayName();
+		
 	}
 }
