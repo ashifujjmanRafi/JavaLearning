@@ -7,6 +7,7 @@ public class MaximumInArray {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
+        System.out.println("Enter the length of array :");
         int x = s.nextInt();
         int[] arr1 = new int[x];
 
@@ -16,6 +17,25 @@ public class MaximumInArray {
         int svalue = s.nextInt();
 
         System.out.println(searchOccurance(arr1, svalue));
+
+        maximumNum(arr1);
+
+    }
+
+    private static void maximumNum(int[] arr1) {
+        int max = 0;
+        int min = 99999999;
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] > max)
+                max = arr1[i];
+
+            if (arr1[i] < min)
+                min = arr1[i];
+        }
+
+        System.out.println("maximum value of array is " + max);
+
+        System.out.println("minimum value of array is " + min);
 
     }
 
