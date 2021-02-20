@@ -15,14 +15,14 @@ public class TwoDArray {
 
             takeInput(array2, row, colloumb);
 
-            for (int i = 0; i < row; i++) {
-                for (int j = 0; j < colloumb; j++) {
+                // for (int i = 0; i < row; i++) {
+                //     for (int j = 0; j < colloumb; j++) {
 
-                    System.out.print(array2[i][j] + " ");
-                    
-                }
-                System.out.println();
-            }
+                //         System.out.print(array2[i][j] + " ");
+                        
+                //     }
+                //     System.out.println();
+                // }
 
         }
 
@@ -36,15 +36,19 @@ public class TwoDArray {
         for (int i = 0; i < row; i++) {
 
             int sumr=0;
+            int max = 0;
             
             for (int j = 0; j < colloumb; j++) {
 
                 array2[i][j] = s.nextInt();
                 sumr+=array2[i][j];
+                if(array2[i][j]>max)
+                    max=array2[i][j];
+
 
             }
 
-            System.out.print("sum of row" +(i+1)+" is "+sumr);
+            System.out.print("sum and max of,row " +(i+1)+" sum "+sumr +" max "+ max);
             System.out.println();
         }
         System.out.println();
