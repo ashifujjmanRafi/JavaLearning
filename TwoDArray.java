@@ -19,6 +19,7 @@ public class TwoDArray {
                 for (int j = 0; j < colloumb; j++) {
 
                     System.out.print(array2[i][j] + " ");
+                    
                 }
                 System.out.println();
             }
@@ -29,13 +30,22 @@ public class TwoDArray {
 
     private static void takeInput(int[][] array2, int row, int colloumb) {
         Scanner s = new Scanner(System.in);
+        
+        int sumc=0;
 
         for (int i = 0; i < row; i++) {
+
+            int sumr=0;
+            
             for (int j = 0; j < colloumb; j++) {
+
                 array2[i][j] = s.nextInt();
+                sumr+=array2[i][j];
 
             }
 
+            System.out.print("sum of row" +(i+1)+" is "+sumr);
+            System.out.println();
         }
         System.out.println();
     }
