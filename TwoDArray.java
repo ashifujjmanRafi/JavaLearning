@@ -15,43 +15,43 @@ public class TwoDArray {
 
             takeInput(array2, row, colloumb);
 
-                // for (int i = 0; i < row; i++) {
-                //     for (int j = 0; j < colloumb; j++) {
+            // for (int i = 0; i < row; i++) {
+            // for (int j = 0; j < colloumb; j++) {
 
-                //         System.out.print(array2[i][j] + " ");
-                        
-                //     }
-                //     System.out.println();
-                // }
+            // System.out.print(array2[i][j] + " ");
+
+            // }
+            // System.out.println();
+            // }
 
         }
 
     }
 
     private static void takeInput(int[][] array2, int row, int colloumb) {
-        Scanner s = new Scanner(System.in);
-        
-        int sumc=0;
+        try (Scanner s = new Scanner(System.in)) {
 
-        for (int i = 0; i < row; i++) {
+            System.out.println("enter the value  ");
 
-            int sumr=0;
-            int max = 0;
-            
-            for (int j = 0; j < colloumb; j++) {
+            for (int i = 0; i < row; i++) {
 
-                array2[i][j] = s.nextInt();
-                sumr+=array2[i][j];
-                if(array2[i][j]>max)
-                    max=array2[i][j];
+                int sumr = 0;
+                int max = 0;
 
+                for (int j = 0; j < colloumb; j++) {
 
+                    array2[i][j] = s.nextInt();
+                    sumr += array2[i][j];
+                    if (array2[i][j] > max)
+                        max = array2[i][j];
+
+                }
+                // taking input in two2d array and printing sum of row and max of row
+                System.out.print("sum and max of row " + (i + 1) + " are sum is " + sumr + " and  max is " + max);
+                System.out.println();
             }
-
-            System.out.print("sum and max of,row " +(i+1)+" sum "+sumr +" max "+ max);
             System.out.println();
         }
-        System.out.println();
     }
 
 }
