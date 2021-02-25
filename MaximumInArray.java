@@ -1,4 +1,3 @@
-//package After80;
 
 import java.util.Scanner;
 
@@ -6,22 +5,23 @@ public class MaximumInArray {
 
     public static void main(String[] args) {
 
-        Scanner s = new Scanner(System.in);
-        System.out.println("Enter the length of array :");
-        int x = s.nextInt();
-        int[] arr1 = new int[x];
+        try (Scanner s = new Scanner(System.in)) {
+            System.out.println("Enter the length of array :");
+            int x = s.nextInt();
+            int[] arr1 = new int[x];
+            System.out.println("enter the value :");
+            takeInput(arr1);
 
-        takeInput(arr1);
+            System.out.println("enter the value you want to search :");
+            int svalue = s.nextInt();
+            System.out.println("the occurence of the value " + svalue + " is :" + searchOccurance(arr1, svalue));
 
-        System.out.println("enter the value you want to search :");
-        int svalue = s.nextInt();
-
-        System.out.println(searchOccurance(arr1, svalue));
-
-        maximumNum(arr1);
+            maximumNum(arr1);
+        }
 
     }
 
+    // searching the maximum and minimum
     private static void maximumNum(int[] arr1) {
         int max = 0;
         int min = 99999999;
@@ -39,6 +39,7 @@ public class MaximumInArray {
 
     }
 
+    // searching the occurence of value
     private static int searchOccurance(int[] arr1, int svalue) {
         int occ = 0;
         for (int i = 0; i < arr1.length; i++)
@@ -52,7 +53,7 @@ public class MaximumInArray {
         Scanner s = new Scanner(System.in);
         for (int i = 0; i < arr1.length; i++)
             arr1[i] = s.nextInt();
-
+    
     }
-
+ 
 }
