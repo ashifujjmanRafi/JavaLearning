@@ -11,12 +11,12 @@ public class ListEx {
         System.out.print("3.set value, ");
         System.out.print("4.display, ");
         System.out.println("5.exit ");
-        //System.out.println();
+        // System.out.println();
     }
 
     public static void showChoice() {
         ArrayList<Integer> integer = new ArrayList<>();
-        
+
         try (Scanner s = new Scanner(System.in)) {
 
             int choice;
@@ -48,11 +48,11 @@ public class ListEx {
                 else if (choice == 4) {
                     System.out.println("yout array " + integer);
 
-                } else{
+                } else {
                     System.out.println("goood bye");
                     return;
                 }
-                
+
             }
 
         }
