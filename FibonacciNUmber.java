@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class FibonacciNUmber {
 
     public static void findNumber() {
-        System.out.println("Enter A Number :");
+        System.out.println("print th number of  fibonacco :");
         try (Scanner s = new Scanner(System.in)) {
             double in = s.nextDouble();
             double sum = 0;
