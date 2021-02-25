@@ -8,23 +8,25 @@ public class ArrayListEx {
 
         ArrayList<String> fruits = new ArrayList<>();
 
-        Scanner s = new Scanner(System.in);
+        try (Scanner s = new Scanner(System.in)) {
 
-        String str;
+            String str;
 
-        for (int i = 0; i < 5; i++) {
-            str = s.next();
-            fruits.add(str);
+            for (int i = 0; i < 5; i++) {
+                str = s.next();
+                fruits.add(str);
+
+            }
+            Collections.sort(fruits);// sorting the array size
+
+            for (int i = 0; i < fruits.size(); i++) {
+                System.out.print(fruits.get(i) + " ");
+
+            }
+
+            System.out.println(fruits);// this will print entire arraylist
 
         }
-        Collections.sort(fruits);
-        for (int i = 0; i < fruits.size(); i++) {
-            System.out.print(fruits.get(i) + " ");
-
-        }
-
-        System.out.println(fruits);// this will print entire arraylist
-
     }
 
 }
