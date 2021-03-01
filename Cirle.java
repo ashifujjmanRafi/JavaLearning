@@ -28,6 +28,7 @@ public class Cirle {
     void setRadius(double radius) {
         this.radius = radius;
     }
+    //static variable method can be called by class name or obj 
     static int getNumofCircle(){
         return numofcircle;
 
