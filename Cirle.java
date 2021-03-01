@@ -3,11 +3,13 @@ public class Cirle {
 
     Point center;
     double radius;
+    static int numofcircle=0;
 
-    Cirle(Point initial, double initial2) {
-        center = initial;
-		this.center = initial;
-        this.radius = initial2;
+    Cirle(Point center, double radius) {
+        numofcircle++;
+        
+		this.center = center;
+        this.radius = radius;
 
     }
 
@@ -19,14 +21,17 @@ public class Cirle {
         return Math.PI * radius * radius;
     }
 
-    public void setCenter(Point center){
+    void setCenter(Point center){
         this.center = center;
 
     }
     void setRadius(double radius) {
         this.radius = radius;
     }
+    static int getNumofCircle(){
+        return numofcircle;
 
+    }
 
 
 }
